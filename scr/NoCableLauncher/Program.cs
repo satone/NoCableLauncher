@@ -31,8 +31,8 @@ namespace NoCableLauncher
         public static SettingsClass.Settings settings = SettingsClass.Settings.Default;
         private static PolicyConfigClient pPolicyConfig = new PolicyConfigClient();
 
-        public const string steamName = "steam://rungameid/221680";
-        private const string exeName = "Rocksmith2014";
+        public const string steamName = "steam://rungameid/205190";
+        private const string exeName = "Rocksmith";
         private const int PROCESS_ALL_ACCESS = 2035711;
 
         private static int offcetVID = 0;
@@ -45,7 +45,7 @@ namespace NoCableLauncher
         private static readonly byte[] rtPid = new byte[2] { 255, 0 };
 
         //Pattern to find cable ID's
-        private static readonly byte[] pattern = new byte[] { rtVid[0], rtVid[1], 146, 10, 16, 192, 17, 192, rtPid[0], rtPid[1] };
+        private static readonly byte[] pattern = new byte[] { rtVid[0], rtVid[1], 0, 0, 16, 192, 17, 192, rtPid[0], rtPid[1] };
 
         private static int hotkeyID = 0;
 
